@@ -62,8 +62,9 @@ struct IntroductionView: View {
                 .padding(.bottom, 30)
 
             }
+            .navigationTitle("Introduction")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Introduction")
         .navigate(to: Composition.makePhotosView(), when: $moveToNextScreen)
     }
 }

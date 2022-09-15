@@ -36,6 +36,21 @@ struct PhotosView: View {
                     }
                 }
 
+                HStack {
+                    Image(systemName: "xmark.circle")
+                        .padding()
+                        .background(.black.opacity(0.7))
+                        .clipShape(Circle())
+                    Spacer()
+                    Image(systemName: "checkmark.circle")
+                        .padding()
+                        .background(.black.opacity(0.7))
+                        .clipShape(Circle())
+                }
+                .foregroundColor(.white)
+                .font(.largeTitle)
+                .padding()
+
             case .error:
                 Text("Sorry! \n We had a problem fetching your images")
                     .font(.headline)
@@ -62,6 +77,7 @@ struct PhotosView: View {
 
 
         }
+
         .confettiCannon(counter: $viewModel.count)
         .alert(isPresented: .constant(!viewModel.errorString.isEmpty) ) {
             Alert(title: Text("Error"), message: Text(viewModel.errorString), dismissButton: Alert.Button.default(Text("Ok")))
