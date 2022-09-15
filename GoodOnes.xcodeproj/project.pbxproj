@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		99BCC3E728D2427400C447A8 /* GoodOnesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC3E628D2427400C447A8 /* GoodOnesApp.swift */; };
-		99BCC3E928D2427400C447A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC3E828D2427400C447A8 /* ContentView.swift */; };
+		99BCC3E928D2427400C447A8 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC3E828D2427400C447A8 /* PhotosView.swift */; };
 		99BCC3EB28D2427600C447A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BCC3EA28D2427600C447A8 /* Assets.xcassets */; };
 		99BCC3EE28D2427600C447A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BCC3ED28D2427600C447A8 /* Preview Assets.xcassets */; };
 		99BCC3F828D2427600C447A8 /* GoodOnesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC3F728D2427600C447A8 /* GoodOnesTests.swift */; };
 		99BCC40228D2427700C447A8 /* GoodOnesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC40128D2427700C447A8 /* GoodOnesUITests.swift */; };
 		99BCC40428D2427700C447A8 /* GoodOnesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC40328D2427700C447A8 /* GoodOnesUITestsLaunchTests.swift */; };
+		99BCC41528D264EE00C447A8 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC41428D264EE00C447A8 /* PhotoViewCell.swift */; };
+		99BCC41A28D2920B00C447A8 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC41928D2920B00C447A8 /* PhotosViewModel.swift */; };
+		99BCC41D28D2945F00C447A8 /* PhotosUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC41C28D2945F00C447A8 /* PhotosUserDefaults.swift */; };
+		99BCC42128D2C4C900C447A8 /* PhotosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC42028D2C4C900C447A8 /* PhotosUseCase.swift */; };
+		99BCC42428D2C7C900C447A8 /* LocalFetchPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC42328D2C7C900C447A8 /* LocalFetchPhoto.swift */; };
+		99BCC42628D2C93E00C447A8 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC42528D2C93E00C447A8 /* ImagePickerManager.swift */; };
+		99BCC42828D2EDB200C447A8 /* UpdateAssetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC42728D2EDB200C447A8 /* UpdateAssetsUseCase.swift */; };
+		99BCC42B28D36B4500C447A8 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 99BCC42A28D36B4500C447A8 /* ConfettiSwiftUI */; };
+		99BCC42F28D3826600C447A8 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC42E28D3826600C447A8 /* IntroductionView.swift */; };
+		99BCC43528D3938800C447A8 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BCC43428D3938800C447A8 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		99BCC3E328D2427400C447A8 /* GoodOnes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodOnes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BCC3E628D2427400C447A8 /* GoodOnesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesApp.swift; sourceTree = "<group>"; };
-		99BCC3E828D2427400C447A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99BCC3E828D2427400C447A8 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 		99BCC3EA28D2427600C447A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99BCC3ED28D2427600C447A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99BCC3F328D2427600C447A8 /* GoodOnesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodOnesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,15 @@
 		99BCC3FD28D2427700C447A8 /* GoodOnesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodOnesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BCC40128D2427700C447A8 /* GoodOnesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesUITests.swift; sourceTree = "<group>"; };
 		99BCC40328D2427700C447A8 /* GoodOnesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99BCC41428D264EE00C447A8 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		99BCC41928D2920B00C447A8 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		99BCC41C28D2945F00C447A8 /* PhotosUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosUserDefaults.swift; sourceTree = "<group>"; };
+		99BCC42028D2C4C900C447A8 /* PhotosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosUseCase.swift; sourceTree = "<group>"; };
+		99BCC42328D2C7C900C447A8 /* LocalFetchPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFetchPhoto.swift; sourceTree = "<group>"; };
+		99BCC42528D2C93E00C447A8 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		99BCC42728D2EDB200C447A8 /* UpdateAssetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAssetsUseCase.swift; sourceTree = "<group>"; };
+		99BCC42E28D3826600C447A8 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		99BCC43428D3938800C447A8 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BCC42B28D36B4500C447A8 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +114,10 @@
 		99BCC3E528D2427400C447A8 /* GoodOnes */ = {
 			isa = PBXGroup;
 			children = (
+				99BCC43328D3937000C447A8 /* Extensions */,
+				99BCC42D28D381BF00C447A8 /* Introduction */,
+				99BCC42C28D37AC000C447A8 /* PhotoList */,
 				99BCC3E628D2427400C447A8 /* GoodOnesApp.swift */,
-				99BCC3E828D2427400C447A8 /* ContentView.swift */,
 				99BCC3EA28D2427600C447A8 /* Assets.xcassets */,
 				99BCC3EC28D2427600C447A8 /* Preview Content */,
 			);
@@ -127,6 +149,69 @@
 			path = GoodOnesUITests;
 			sourceTree = "<group>";
 		};
+		99BCC41B28D2944A00C447A8 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC41C28D2945F00C447A8 /* PhotosUserDefaults.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		99BCC41E28D2B5F600C447A8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC41928D2920B00C447A8 /* PhotosViewModel.swift */,
+				99BCC41428D264EE00C447A8 /* PhotoViewCell.swift */,
+				99BCC3E828D2427400C447A8 /* PhotosView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		99BCC41F28D2C4B800C447A8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC42028D2C4C900C447A8 /* PhotosUseCase.swift */,
+				99BCC42728D2EDB200C447A8 /* UpdateAssetsUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		99BCC42228D2C5B000C447A8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC42328D2C7C900C447A8 /* LocalFetchPhoto.swift */,
+				99BCC42528D2C93E00C447A8 /* ImagePickerManager.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		99BCC42C28D37AC000C447A8 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC41B28D2944A00C447A8 /* Persistence */,
+				99BCC41E28D2B5F600C447A8 /* Scene */,
+				99BCC41F28D2C4B800C447A8 /* Domain */,
+				99BCC42228D2C5B000C447A8 /* Infrastructure */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		99BCC42D28D381BF00C447A8 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC42E28D3826600C447A8 /* IntroductionView.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		99BCC43328D3937000C447A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				99BCC43428D3938800C447A8 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +228,9 @@
 			dependencies = (
 			);
 			name = GoodOnes;
+			packageProductDependencies = (
+				99BCC42A28D36B4500C447A8 /* ConfettiSwiftUI */,
+			);
 			productName = GoodOnes;
 			productReference = 99BCC3E328D2427400C447A8 /* GoodOnes.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +303,9 @@
 				Base,
 			);
 			mainGroup = 99BCC3DA28D2427400C447A8;
+			packageReferences = (
+				99BCC42928D36B4500C447A8 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 99BCC3E428D2427400C447A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +348,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BCC3E928D2427400C447A8 /* ContentView.swift in Sources */,
+				99BCC42F28D3826600C447A8 /* IntroductionView.swift in Sources */,
+				99BCC42128D2C4C900C447A8 /* PhotosUseCase.swift in Sources */,
+				99BCC41528D264EE00C447A8 /* PhotoViewCell.swift in Sources */,
+				99BCC41D28D2945F00C447A8 /* PhotosUserDefaults.swift in Sources */,
+				99BCC3E928D2427400C447A8 /* PhotosView.swift in Sources */,
 				99BCC3E728D2427400C447A8 /* GoodOnesApp.swift in Sources */,
+				99BCC42828D2EDB200C447A8 /* UpdateAssetsUseCase.swift in Sources */,
+				99BCC43528D3938800C447A8 /* View+Extension.swift in Sources */,
+				99BCC42428D2C7C900C447A8 /* LocalFetchPhoto.swift in Sources */,
+				99BCC41A28D2920B00C447A8 /* PhotosViewModel.swift in Sources */,
+				99BCC42628D2C93E00C447A8 /* ImagePickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +521,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need to acccess the camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need to acccess the camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +552,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need to acccess the camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need to acccess the camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +687,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99BCC42928D36B4500C447A8 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99BCC42A28D36B4500C447A8 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99BCC42928D36B4500C447A8 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99BCC3DB28D2427400C447A8 /* Project object */;
 }
