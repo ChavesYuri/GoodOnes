@@ -30,9 +30,9 @@ struct PhotosView: View {
             case .loaded:
                 ZStack {
                     ForEach(0..<viewModel.assets.count , id: \.self) { index in
-                        PhotoViewCell(onFinish: { asset in
+                        PhotoViewCell(phAsset: viewModel.assets[index], onFinish: { asset in
                             viewModel.processedAsset(asset, index: index)
-                        }, phAsset: viewModel.assets[index])
+                        })
                     }
                 }
 

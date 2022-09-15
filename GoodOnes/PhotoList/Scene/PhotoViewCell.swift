@@ -3,13 +3,12 @@ import SwiftUI
 import PhotosUI
 
 struct PhotoViewCell: View {
-    var onFinish: ((PHAsset) -> Void)?
-
     @State private var offset = CGSize.zero
     @State private var borderColor = Color.white
     @State private var image: Image?
 
     let phAsset: PHAsset
+    let onFinish: ((PHAsset) -> Void)
 
     var body: some View {
         let width = UIScreen.main.bounds.width * 0.8
@@ -53,10 +52,10 @@ struct PhotoViewCell: View {
         switch width {
         case -500...(-150):
             offset = .init(width: -500, height: 0)
-            onFinish?(phAsset)
+            onFinish(phAsset)
         case 150...(500):
             offset = .init(width: 500, height: 0)
-            onFinish?(phAsset)
+            onFinish(phAsset)
         default:
             offset = .zero
         }
@@ -88,6 +87,6 @@ struct PhotoViewCell: View {
 
 struct PhotoViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoViewCell(phAsset: .init())
+        PhotoViewCell(phAsset: .init(), onFinish: {_ in })
     }
 }
